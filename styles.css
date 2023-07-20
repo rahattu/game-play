@@ -10,7 +10,7 @@ a {
 
 .button {
  
-  padding: 15px 30px;
+  padding: 15px 15px 15px 28px;
   height: 30px;
   width: 80px;
   border-radius: 50px;
@@ -246,7 +246,7 @@ header {
 }
 
 .rev .img2 {
-  left: 70%;
+  left: 60%;
 }
 
 .rev .down-left {
@@ -288,88 +288,94 @@ header {
 
 
 /*------------------------------game-types-section started --------------------------*/
-.game-types-section{
-    background-color:rgba(255, 66, 165, 0.03) ; 
-    width:100%;
-    display: flex;
-    padding-top: 40px;
-    padding-bottom: 40px; 
-     justify-content: center;
-     align-items: center;
- }
- .game-types-container{
-     width:80%;
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     align-items: center;
- 
- }
- .game-types{
-    
-     min-width: 130px;
-     height:45px;
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     border-radius: 50px;
-     background-color: #FFF;
-      margin:10px 15px;
-      padding: 10px 5px;
-      box-sizing: border-box;
-      border: 3px solid transparent;
-      transition: .3s ease-out;
- }
- .game-types img{
-     width: 15%;
- }
- .game-types:hover{
-     border: 3px solid rgba(247, 5, 154, 0.911);
- }
+/* Game icon features style here */
 
+.game-icon-features {
+  display: flex;
+  gap: 20px;
+  flex-basis: 150px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0px;
+  padding: 20px;
+}
 
+.game-icon-features{
+  color: #0B0223;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.game-icon-item:hover{
+  color: #F948B2;
+  border: 1px solid #F948B2;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.game-icon-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Footer design start here */
 
 footer {
-  color: white;
   background-color: #0B0223;
-  padding: 120px 240px;
+  font-weight: 400;
+  color: #FFF;
+  padding: 30px 0;
+}
+
+.logo-footer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin: 30px 0;
+  cursor: pointer;
+  color: #beb2da;
+}
+
+.footer-icon {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  cursor:pointer;
+  font-size:xx-large;
+
+}
+
+.fa-brands{
+  width: 40px;
+  color: #ffffff;
+
+}
+
+.footer-term ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 25px;
+  cursor: pointer;
+  color: #beb1dd;
+}
+
+footer p {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  row-gap: 65px;
+  color: #c5bfd3;
 }
-
-.foot-title {
-  display: flex;
-  column-gap: 20px;
-  align-items: center;
-  justify-content: center;
-  font-size: 2em;
-}
-
-.foot-nav, .foot-icons {
-  display: grid;
-  grid-template-columns: repeat(6, auto);
-  column-gap: 24px;
-  row-gap: 24px;
-  justify-content: center;
-  align-items: center;
-}
-
-.foot-term {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  column-gap: 24px;
-  row-gap: 24px;
-  justify-content: center;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.60);
-}
-
-.copyright {
-  color: rgba(255, 255, 255, 0.60);
-}
-
 
 
 /*Other device breakpoints responsive  */
@@ -459,39 +465,17 @@ footer {
     font-size: 0.95em;
   }
 
-  .game-types-section{
-    width:100%;
-    padding: 10px 0px;
-}
-
-.game-types-container{
-    width:100%;
-}
-.game-types{
-   padding: 10px 5px;
-    margin:8px 4px;
-    min-width: 130px;
   
-}
-.game-types img{
-    width: 25%;
-}
-.game-types h3{
-    
-   font-size:12px;
-}
-
-  .foot-nav, .foot-icons {
-    grid-template-columns: repeat(3, auto);
-  }
-
-  .foot-term {
-    display: flex;
+  .footer-menu ul{
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 100px;
-  
-  }
 }
+
+}
+
+
+
 
 @media (min-width: 577px) and (max-width: 992px) {
   .button {
@@ -566,34 +550,4 @@ footer {
 
 
 
-  .game-types-section{
-    width:100%;
-    padding: 10px 0px;
-}
-
-.game-types-container{
-    width:100%;
-}
-.game-types{
-   padding: 10px 5px;
-    margin:10px 5px;
-    min-width: 130px;
-  
-  }
-.game-types img{
-    width: 25%;
  }
-.game-types h3{
-    
-   font-size:12px;
-  }
-  .foot-nav, .foot-icons {
-    grid-template-columns: repeat(3, auto);
-    column-gap: 48px;
-  }
-
-  .foot-term {
-    grid-template-columns: repeat(2, auto);
-    column-gap: 50px;
-  }
-}
